@@ -1,5 +1,6 @@
 using ContosoPizza.Services;
 using ContosoPizza.Data;
+using Microsoft.EntityFrameworkCore;
 // Additional using declarations
 
 
@@ -10,8 +11,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add the PizzaContext
-builder.Services.AddSqlite<PizzaContext> ("Data Source=ContosoPizza.db");
+var conn = "server=localhost;port=3306;database=pizzaContozoMySQL;uid=root;password=root";
+var server = new MySqlServerVersion(new Version(8, 0, 26));
 
+builder.Services.AddDbContext<PizzaContext>(
+    dbContextOptions => 
+    dbContextOptions.UseMySql(conn, server)
+);
+
+//builder.Services.AddSqlite<PizzaContext> ("Data Source=ContosoPizza.db");
 // Add the PromotionsContext
 
 builder.Services.AddScoped<PizzaService>();

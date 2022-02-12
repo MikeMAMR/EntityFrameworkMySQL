@@ -12,6 +12,9 @@ public static class Extensions
                 if (context.Database.EnsureCreated())
                 {
                     DbInitializer.Initialize(context);
+                }else{
+                    
+                    DbInitializer.Initialize(context);
                 }
             }
         }

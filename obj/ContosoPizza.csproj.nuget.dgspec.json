@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moren\\Desktop\\mslearn-persist-data-ef-core\\contosoPizza\\ContosoPizza.csproj": {}
+    "C:\\Users\\moren\\Desktop\\Ejercicios\\Web II\\ContosoPizza\\ContosoPizza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moren\\Desktop\\mslearn-persist-data-ef-core\\contosoPizza\\ContosoPizza.csproj": {
+    "C:\\Users\\moren\\Desktop\\Ejercicios\\Web II\\ContosoPizza\\ContosoPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moren\\Desktop\\mslearn-persist-data-ef-core\\contosoPizza\\ContosoPizza.csproj",
+        "projectUniqueName": "C:\\Users\\moren\\Desktop\\Ejercicios\\Web II\\ContosoPizza\\ContosoPizza.csproj",
         "projectName": "ContosoPizza",
-        "projectPath": "C:\\Users\\moren\\Desktop\\mslearn-persist-data-ef-core\\contosoPizza\\ContosoPizza.csproj",
+        "projectPath": "C:\\Users\\moren\\Desktop\\Ejercicios\\Web II\\ContosoPizza\\ContosoPizza.csproj",
         "packagesPath": "C:\\Users\\moren\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moren\\Desktop\\mslearn-persist-data-ef-core\\contosoPizza\\obj\\",
+        "outputPath": "C:\\Users\\moren\\Desktop\\Ejercicios\\Web II\\ContosoPizza\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moren\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,14 @@
               "version": "[6.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.1, )"
             },
